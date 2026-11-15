@@ -1,0 +1,27 @@
+{
+  "name": "zippy-enterprise-construction-solutions",
+  "version": "1.0.0",
+  "description": "Zippy Enterprises Private Limited - React JS Framework + Pure PHP/MySQL Backend Package (Zero Node.js Required on Server)",
+  "main": "index.php",
+  "scripts": {
+    "build": "node build.js",
+    "start": "php -S 0.0.0.0:8000",
+    "dev": "php -S 127.0.0.1:8000"
+  },
+  "keywords": [
+    "react-js",
+    "php-package",
+    "zippy-enterprises",
+    "construction-solutions",
+    "hyderabad"
+  ],
+  "author": "Zippy Enterprises Private Limited <zippyconstructions@gmail.com>",
+  "license": "Proprietary",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}
