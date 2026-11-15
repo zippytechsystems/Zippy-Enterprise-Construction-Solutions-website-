@@ -63,7 +63,7 @@ All enquiry forms on the website capture the 10 critical parameters required for
 9. Approximate Budget
 10. Specific Project Requirements / Notes
 
-Every submission generates an automatic reference ID (e.g. `ZIP-ENQ-2026-XXXX`), saves to the database, dispatches an email alert to `sales@zippyenterprises.com`, and provides an instant one-click WhatsApp pre-filled connection for immediate engagement.
+Every submission generates an automatic reference ID (e.g. `ZIP-ENQ-2026-XXXX`), saves to the database, dispatches an email alert to `sales@zippyenterpriseconstructions.in`, and provides an instant one-click WhatsApp pre-filled connection for immediate engagement.
 
 ---
 
@@ -137,5 +137,6 @@ Open `http://127.0.0.1:8000` in your web browser.
 - **Primary Line:** +91 91212 87654
 - **Board Line:** +91 40 4892 7800
 - **WhatsApp:** +91 91212 87654
-- **Official Email:** info@zippyenterprises.com
-- **Sales & Tenders:** sales@zippyenterprises.com
+- **Official Email:** info@zippyenterpriseconstructions.in
+- **Sales & Tenders:** sales@zippyenterpriseconstructions.in
+- **Official Domain:** https://zippyenterpriseconstructions.in

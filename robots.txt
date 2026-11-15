@@ -1,8 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /portal/
 Disallow: /config/
 Disallow: /api/
 Disallow: /database/
 
-Sitemap: https://zippyenterprises.com/sitemap.xml
+Sitemap: https://zippyenterpriseconstructions.in/sitemap.xml

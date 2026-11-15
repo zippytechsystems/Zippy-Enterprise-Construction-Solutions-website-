@@ -72,7 +72,7 @@ try {
     $emailSubject = "New Project Enquiry [{$enquiryNumber}] - {$fullName}";
     $emailBody = "New Construction Enquiry Received:\n\nReference: {$enquiryNumber}\nName: {$fullName}\nPhone: {$phone}\nEmail: {$email}\nLocation: {$location}\nType: {$type}\nPlot Size: {$plotSize}\nBuilt-up: {$builtUpArea}\nFloors: {$floors}\nBudget: {$budget}\nRequirements: {$requirements}\n";
     // Send via PHP mail if configured
-    @mail(COMPANY_SALES_EMAIL, $emailSubject, $emailBody, "From: no-reply@zippyenterprises.com\r\nReply-To: {$email}\r\n");
+    @mail(COMPANY_SALES_EMAIL, $emailSubject, $emailBody, "From: no-reply@" . COMPANY_DOMAIN . "\r\nReply-To: {$email}\r\n");
 
     echo json_encode([
         'success' => true,

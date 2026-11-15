@@ -1,12 +1,17 @@
 # ==============================================================================
 # ZIPPY ENTERPRISES PRIVATE LIMITED
-# Production Apache & Hostinger Deployment Configuration (.htaccess)
+# Hostinger Apache Production Deployment (.htaccess)
+# Domain: zippyenterpriseconstructions.in
 # ==============================================================================
 
-# 1. Enable URL Rewriting
+# 1. Enable URL Rewriting & Force HTTPS
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
+
+    # Force HTTPS on Hostinger
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
     # Redirect trailing slashes if not a directory
     RewriteCond %{REQUEST_FILENAME} !-d
@@ -61,5 +66,5 @@ Options -Indexes
     ExpiresByType text/javascript "access plus 1 month"
 </IfModule>
 
-# 6. Default Charset & PHP Timezone
+# 6. Default Charset & Timezone
 AddDefaultCharset UTF-8

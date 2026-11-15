@@ -22,7 +22,7 @@
     "civil-engineering",
     "cost-estimator"
   ],
-  "author": "Zippy Enterprises Private Limited <sales@zippyenterprises.com>",
+  "author": "Zippy Enterprises Private Limited <sales@zippyenterpriseconstructions.in>",
   "license": "Proprietary",
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/zippytechsystems/Zippy-Enterprise-Construction-Solutions-website-/issues"
   },
-  "homepage": "https://zippyenterprises.com",
+  "homepage": "https://zippyenterpriseconstructions.in",
   "engines": {
     "node": ">=18.0.0"
   }
