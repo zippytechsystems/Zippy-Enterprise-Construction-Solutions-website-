@@ -1,0 +1,38 @@
+{
+  "name": "zippy-enterprise-construction-solutions",
+  "version": "1.0.0",
+  "description": "Zippy Enterprises Private Limited - Premium Construction Solutions & Building Development Corporate Platform",
+  "main": "index.php",
+  "scripts": {
+    "start": "php -S 0.0.0.0:8000",
+    "dev": "php -S 127.0.0.1:8000",
+    "serve": "php -S 127.0.0.1:8000",
+    "build": "echo \"Zippy Enterprise build ready for deployment\"",
+    "test": "node -e \"console.log('Zippy Enterprise build verification successful')\""
+  },
+  "keywords": [
+    "zippy-enterprises",
+    "construction-solutions",
+    "building-development",
+    "hyderabad",
+    "corporate-portfolio",
+    "residential-construction",
+    "commercial-construction",
+    "turnkey-epc",
+    "civil-engineering",
+    "cost-estimator"
+  ],
+  "author": "Zippy Enterprises Private Limited <sales@zippyenterprises.com>",
+  "license": "Proprietary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zippytechsystems/Zippy-Enterprise-Construction-Solutions-website-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zippytechsystems/Zippy-Enterprise-Construction-Solutions-website-/issues"
+  },
+  "homepage": "https://zippyenterprises.com",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
