@@ -24,22 +24,22 @@ require_once __DIR__ . '/includes/header.php';
   <div class="container py-4" style="max-width:900px;">
     <h3 class="fw-bold text-navy mb-3">1. Information Collection and Usage</h3>
     <p class="text-muted">
-      Zippy Enterprises Private Limited ("Company", "we", "us") collects personal and project data including full name, contact telephone, email address, plot dimensions, geographic site locations, and banking requirements when you submit enquiry forms, interact with the Construction Cost Estimator, apply for self-construction loan assistance, or register for portal accounts.
+      Zippy Enterprises Private Limited ("Company", "we", "us") collects personal and project data including full name, contact telephone, email address, plot dimensions, geographic site locations, and banking requirements when you submit enquiry forms, interact with the Construction Cost Estimator, request quotations, or apply for self-construction loan assistance.
     </p>
 
     <h3 class="fw-bold text-navy mt-4 mb-3">2. Project and Construction Data Confidentiality</h3>
     <p class="text-muted">
-      All architectural blueprints, structural calculations, soil test reports, bill of quantities (BOQ), and financial milestone transactions uploaded to your Customer or Builder Dashboard are stored under role-based access control (RBAC). We never sell, lease, or monetize customer project records.
+      All architectural blueprints, structural calculations, soil test reports, bill of quantities (BOQ), and quotation records shared with our technical advisory team are kept strictly confidential. We never sell, lease, or monetize customer project records.
     </p>
 
     <h3 class="fw-bold text-navy mt-4 mb-3">3. Communication via WhatsApp &amp; SMS</h3>
     <p class="text-muted">
-      By requesting a quotation or registering on our platform, you consent to receive stage-wise construction notifications, site photo updates, inspection schedules, and engineer communications via SMS, WhatsApp, and encrypted email.
+      By requesting a quotation or technical consultation, you consent to receive project estimates, site inspection confirmations, and engineer communications via SMS, WhatsApp, and email.
     </p>
 
     <h3 class="fw-bold text-navy mt-4 mb-3">4. Data Security Standards</h3>
     <p class="text-muted">
-      All server interactions utilize Secure Sockets Layer (SSL/TLS 1.3) encryption, salted password hashing (Bcrypt), and session protection to safeguard against unauthorized access.
+      All server interactions utilize Secure Sockets Layer (SSL/TLS 1.3) encryption, strict input sanitization, and CSRF protection to safeguard your contact and project details.
     </p>
   </div>
 </section>

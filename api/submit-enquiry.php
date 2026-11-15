@@ -1,6 +1,6 @@
 <?php
 /**
- * API: Submit Enquiry / Lead Capture
+ * API: Project Enquiry Submission (10-Field System)
  * Zippy Enterprises Private Limited
  */
 
@@ -15,67 +15,73 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 if (!Security::verifyCsrf()) {
-    echo json_encode(['success' => false, 'message' => 'Security token expired or invalid. Please refresh the page and try again.']);
+    echo json_encode(['success' => false, 'message' => 'Security session expired. Please refresh the page and try again.']);
     exit;
 }
 
-$fullName = Security::clean($_POST['full_name'] ?? '');
-$phone    = Security::clean($_POST['phone'] ?? '');
-$email    = Security::clean($_POST['email'] ?? '');
-$service  = Security::clean($_POST['service_requested'] ?? 'General Construction Enquiry');
-$location = Security::clean($_POST['project_location'] ?? 'Hyderabad');
-$budget   = Security::clean($_POST['estimated_budget'] ?? 'Not Specified');
-$source   = Security::clean($_POST['source'] ?? 'website');
-$notes    = Security::clean($_POST['notes'] ?? '');
+// 10 Fields as per Section 13
+$fullName     = Security::clean($_POST['full_name'] ?? '');
+$phone        = Security::clean($_POST['phone'] ?? '');
+$email        = Security::clean($_POST['email'] ?? '');
+$location     = Security::clean($_POST['project_location'] ?? 'Hyderabad');
+$type         = Security::clean($_POST['construction_type'] ?? 'Residential Construction');
+$plotSize     = Security::clean($_POST['plot_size'] ?? 'Not specified');
+$builtUpArea  = Security::clean($_POST['built_up_area'] ?? 'Not specified');
+$floors       = Security::clean($_POST['number_of_floors'] ?? 'G+1');
+$budget       = Security::clean($_POST['approx_budget'] ?? 'Not specified');
+$requirements = Security::clean($_POST['project_requirements'] ?? '');
+$source       = Security::clean($_POST['source'] ?? 'website_enquiry');
 
+// Mandatory fields validation
 if (empty($fullName) || empty($phone)) {
-    echo json_encode(['success' => false, 'message' => 'Please provide your full name and contact phone number.']);
+    echo json_encode(['success' => false, 'message' => 'Please provide your full name and contact mobile number.']);
     exit;
 }
 
 try {
     $db = Database::getConnection();
-    
-    // Auto-generate unique enquiry ID
+
+    // Generate unique automatic enquiry reference number
     $enquiryNumber = 'ZIP-ENQ-' . date('Y') . '-' . rand(1000, 9999);
-    
+
     $sql = Database::getDriver() === 'mysql'
-        ? "INSERT INTO leads (enquiry_number, full_name, email, phone, service_requested, project_location, estimated_budget, source, status, notes, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'new', ?, NOW())"
-        : "INSERT INTO leads (enquiry_number, full_name, email, phone, service_requested, project_location, estimated_budget, source, status, notes, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'new', ?, datetime('now'))";
+        ? "INSERT INTO enquiries (enquiry_number, full_name, phone, email, project_location, construction_type, plot_size, built_up_area, number_of_floors, approx_budget, project_requirements, source, status, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'new', NOW())"
+        : "INSERT INTO enquiries (enquiry_number, full_name, phone, email, project_location, construction_type, plot_size, built_up_area, number_of_floors, approx_budget, project_requirements, source, status, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'new', datetime('now'))";
 
     $stmt = $db->prepare($sql);
     $stmt->execute([
         $enquiryNumber,
         $fullName,
-        $email,
         $phone,
-        $service,
+        $email,
         $location,
+        $type,
+        $plotSize,
+        $builtUpArea,
+        $floors,
         $budget,
-        $source,
-        $notes
+        $requirements,
+        $source
     ]);
 
-    // Notify Admin
-    $adminUser = $db->query("SELECT id FROM users WHERE role = 'admin' LIMIT 1")->fetch();
-    if ($adminUser) {
-        Security::createNotification(
-            (int)$adminUser['id'],
-            "New Enquiry: {$enquiryNumber}",
-            "{$fullName} submitted an enquiry for {$service} at {$location} (Budget: {$budget}).",
-            "leads.php"
-        );
-    }
+    // Format WhatsApp message pre-fill
+    $waText = "Hello Zippy Enterprises! I submitted an enquiry (Ref: {$enquiryNumber}) for {$type} at {$location}. Budget: {$budget}. Name: {$fullName}.";
+    $whatsappUrl = "https://wa.me/" . COMPANY_WHATSAPP . "?text=" . urlencode($waText);
 
-    // Audit Log
-    Security::logAudit("LEAD_CAPTURED", "Enquiry {$enquiryNumber} received from {$fullName} ({$phone})");
+    // Business email notification simulation / dispatch
+    $emailSubject = "New Project Enquiry [{$enquiryNumber}] - {$fullName}";
+    $emailBody = "New Construction Enquiry Received:\n\nReference: {$enquiryNumber}\nName: {$fullName}\nPhone: {$phone}\nEmail: {$email}\nLocation: {$location}\nType: {$type}\nPlot Size: {$plotSize}\nBuilt-up: {$builtUpArea}\nFloors: {$floors}\nBudget: {$budget}\nRequirements: {$requirements}\n";
+    // Send via PHP mail if configured
+    @mail(COMPANY_SALES_EMAIL, $emailSubject, $emailBody, "From: no-reply@zippyenterprises.com\r\nReply-To: {$email}\r\n");
 
     echo json_encode([
         'success' => true,
-        'message' => "Thank you, {$fullName}! Your enquiry [{$enquiryNumber}] has been assigned to our Project Advisory Team. We will contact you within 2 hours.",
-        'enquiry_number' => $enquiryNumber
+        'enquiry_number' => $enquiryNumber,
+        'message' => "Thank you, {$fullName}! Your construction enquiry [{$enquiryNumber}] has been logged. Our Senior Project Consultant will review your plot requirements and contact you within 2 business hours.",
+        'whatsapp_url' => $whatsappUrl
     ]);
+
 } catch (Exception $e) {
     error_log("Enquiry submission error: " . $e->getMessage());
-    echo json_encode(['success' => false, 'message' => 'Database error occurred. Please call our hotline directly.']);
+    echo json_encode(['success' => false, 'message' => 'Database error occurred. Please call +91 91212 87654 directly.']);
 }

@@ -77,7 +77,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="p-4 rounded h-100" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(212,175,55,0.25);">
           <div class="brand-logo-icon mb-3"><i class="fas fa-cube"></i></div>
           <h5 class="text-white fw-bold">M25 / M30 Ready-Mix Concrete</h5>
-          <p class="text-white-50 small mb-0">Tested with standardized compressive cube tests at 7, 14, and 28 days with lab certificates uploaded to your portal.</p>
+          <p class="text-white-50 small mb-0">Tested with standardized compressive cube tests at 7, 14, and 28 days with certified laboratory test reports provided for every pour.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">

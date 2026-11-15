@@ -37,9 +37,9 @@ require_once __DIR__ . '/includes/header.php';
       Zippy Enterprises provides certified architectural estimates, valuation liaison, and stage-wise progress certificates for banking institutions. We do not operate as a financial institution or money lender. Loan underwriting, sanction values, interest rates, and loan disbursements remain the exclusive purview of the respective commercial lending banks.
     </p>
 
-    <h3 class="fw-bold text-navy mt-4 mb-3">4. Builder &amp; Contractor Accreditation</h3>
+    <h3 class="fw-bold text-navy mt-4 mb-3">4. Professional Network &amp; Contractor Accreditation</h3>
     <p class="text-muted">
-      Registration on the Builder Portal constitutes an application for accreditation. Zippy Enterprises reserves the right to accept, reject, suspend, or terminate contractor affiliations based on safety compliance, workmanship audits, and adherence to Indian Standard (IS) codes.
+      Application to join the Zippy Professional Network constitutes an application for quality accreditation. Zippy Enterprises reserves the right to accept, reject, suspend, or terminate partner affiliations based on safety compliance, workmanship audits, and adherence to Indian Standard (IS) codes.
     </p>
 
     <h3 class="fw-bold text-navy mt-4 mb-3">5. Jurisdiction</h3>

@@ -1,10 +1,10 @@
 <?php
 /**
- * Master Services Page (All 14 Construction Services)
+ * Master Services Page (All 15 Construction Services + Loan Assistance)
  * Zippy Enterprises Private Limited
  */
-$pageTitle = "Construction Services | 14 Specialized Solutions";
-$pageDescription = "Explore all 14 comprehensive construction and building development services offered by Zippy Enterprises in Hyderabad: residential, commercial, turnkey EPC, and PMC.";
+$pageTitle = "Construction Services | 15 Specialized Solutions";
+$pageDescription = "Explore all 15 comprehensive construction and building development services offered by Zippy Enterprises in Hyderabad: residential, commercial, turnkey EPC, and PMC.";
 require_once __DIR__ . '/includes/header.php';
 
 $allServices = [
@@ -13,7 +13,7 @@ $allServices = [
         'title' => 'Residential Building Construction',
         'badge' => 'Luxury Living',
         'desc' => 'End-to-end civil execution for custom private residences, luxury duplexes, and multi-family homes built with Grade-A structural materials.',
-        'features' => ['Vastu-compliant layouts', 'M25/M30 concrete with cube testing', '3-year anti-termite & waterproofing warranty'],
+        'features' => ['Vastu-compliant layouts', 'M25/M30 concrete with cube testing', '10-year structural stability guarantee'],
         'link' => 'service-residential.php',
         'img' => 'assets/images/services/residential.jpg'
     ],
@@ -22,9 +22,18 @@ $allServices = [
         'title' => 'Independent House Construction',
         'badge' => 'Private Homes',
         'desc' => 'Specialized construction on private plots and layouts, delivering customized elevation designs, dedicated parking basements, and terrace gardens.',
-        'features' => ['Customized room dimensions', 'Solar net-metering ready', 'Rainwater harvesting pit included'],
-        'link' => 'service-residential.php',
+        'features' => ['Customized room dimensions', 'Engineered raft foundations', 'Rainwater harvesting pit included'],
+        'link' => 'service-independent-house.php',
         'img' => 'assets/images/services/residential.jpg'
+    ],
+    [
+        'id' => 'villa',
+        'title' => 'Villa Construction',
+        'badge' => 'Ultra Luxury',
+        'desc' => 'Sprawling private villas and architectural estates in Jubilee Hills, Banjara Hills, and Kokapet with double-height atriums and infinity pools.',
+        'features' => ['Imported Statuario marble flooring', 'Schüco acoustic glass fenestration', 'Private hydraulic elevator shafts'],
+        'link' => 'service-villa.php',
+        'img' => 'assets/images/projects/project-1.jpg'
     ],
     [
         'id' => 'apartment',
@@ -46,10 +55,10 @@ $allServices = [
     ],
     [
         'id' => 'turnkey',
-        'title' => 'Turnkey Construction',
-        'badge' => 'Concept to Handover',
+        'title' => 'Turnkey Construction Projects',
+        'badge' => 'Concept to Keys',
         'desc' => 'Complete stress-free execution where Zippy manages architectural drawings, GHMC permits, material procurement, civil labor, and interior finishing.',
-        'features' => ['Single-point contract accountability', 'Fixed price & milestone schedule', 'Digital tracking on customer portal'],
+        'features' => ['Single-point contract accountability', 'Fixed price & milestone schedule', 'Transparent stage-wise inspection sign-offs'],
         'link' => 'service-turnkey.php',
         'img' => 'assets/images/services/turnkey.jpg'
     ],
@@ -59,12 +68,21 @@ $allServices = [
         'badge' => 'Joint Ventures',
         'desc' => 'Strategic property development collaborations, land-owner joint venture (JV) agreements, and mixed-use commercial-residential complexes.',
         'features' => ['Fair & transparent ratio sharing', 'Full statutory clearance handling', 'High-velocity project execution'],
-        'link' => 'service-consultancy.php',
+        'link' => 'service-apartment.php',
         'img' => 'assets/images/services/apartment.jpg'
     ],
     [
+        'id' => 'consultancy',
+        'title' => 'Construction Consultancy',
+        'badge' => 'Technical Advisory',
+        'desc' => 'Comprehensive technical consultancy covering feasibility studies, cost engineering, contractor vetting, and construction safety compliance.',
+        'features' => ['Chartered Engineer technical audits', 'Detailed Bill of Quantities (BOQ)', 'Risk assessment & mitigation planning'],
+        'link' => 'service-consultancy.php',
+        'img' => 'assets/images/services/consultancy.jpg'
+    ],
+    [
         'id' => 'pmc',
-        'title' => 'Construction Project Management (PMC)',
+        'title' => 'Construction Project Coordination',
         'badge' => 'Quality & Auditing',
         'desc' => 'Independent technical supervision, material testing, contractor vetting, site safety enforcement, and budget variance monitoring for client peace of mind.',
         'features' => ['Daily digital site inspection logs', 'Bill checking & BOQ verification', 'Snag list preparation & resolution'],
@@ -142,7 +160,7 @@ $allServices = [
   <img src="assets/images/hero-bg.jpg" alt="Construction Services" class="page-banner-bg">
   <div class="container page-banner-content">
     <div class="badge-gold mb-2">SERVICE DIRECTORY</div>
-    <h1 class="page-banner-title">Our 14 Construction &amp; Development Services</h1>
+    <h1 class="page-banner-title">Our 15 Construction &amp; Development Solutions</h1>
     <div class="breadcrumb-custom">
       <a href="index.php"><i class="fas fa-home me-1"></i> Home</a>
       <span>/</span>
@@ -202,9 +220,14 @@ $allServices = [
     <p class="text-white-50 mx-auto mb-4" style="max-width:620px;">
       Our Senior Engineering Consultants are available for on-site plot inspections anywhere across Hyderabad and surrounding regions.
     </p>
-    <button type="button" class="btn btn-gold btn-lg" data-bs-toggle="modal" data-bs-target="#quickEnquiryModal">
-      <i class="fas fa-calendar-check me-2"></i> Book Technical Consultation
-    </button>
+    <div class="d-flex justify-content-center gap-3">
+      <button type="button" class="btn btn-gold btn-lg" data-bs-toggle="modal" data-bs-target="#quickEnquiryModal">
+        <i class="fas fa-calendar-check me-2"></i> Book Technical Consultation
+      </button>
+      <a href="quote.php" class="btn btn-outline-light btn-lg">
+        <i class="fas fa-file-invoice me-2"></i> Request a Quote
+      </a>
+    </div>
   </div>
 </section>
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * API: Self-Construction Loan Application
+ * API: Self-Construction Loan Enquiry
  * Zippy Enterprises Private Limited
  */
 
@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 if (!Security::verifyCsrf()) {
-    echo json_encode(['success' => false, 'message' => 'Security token invalid. Please refresh.']);
+    echo json_encode(['success' => false, 'message' => 'Security session expired. Please refresh.']);
     exit;
 }
 
@@ -29,7 +29,6 @@ $desiredLoan = (float)($_POST['desired_loan_amount'] ?? 0);
 $income     = (float)($_POST['monthly_income'] ?? 0);
 $empType    = Security::clean($_POST['employment_type'] ?? 'salaried');
 $banks      = Security::clean($_POST['preferred_banks'] ?? 'SBI, HDFC, ICICI');
-$userId     = Security::user()['id'] ?? null;
 
 if (empty($name) || empty($phone)) {
     echo json_encode(['success' => false, 'message' => 'Please provide applicant name and contact phone number.']);
@@ -38,42 +37,21 @@ if (empty($name) || empty($phone)) {
 
 try {
     $db = Database::getConnection();
+    $refNumber = 'ZIP-LN-' . date('Y') . '-' . rand(100, 999);
+
     $sql = Database::getDriver() === 'mysql'
-        ? "INSERT INTO loan_applications (user_id, applicant_name, phone, email, plot_ownership, plot_location, estimated_construction_budget, desired_loan_amount, monthly_income, employment_type, preferred_banks, status, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'submitted', NOW())"
-        : "INSERT INTO loan_applications (user_id, applicant_name, phone, email, plot_ownership, plot_location, estimated_construction_budget, desired_loan_amount, monthly_income, employment_type, preferred_banks, status, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'submitted', datetime('now'))";
+        ? "INSERT INTO loan_enquiries (reference_number, applicant_name, phone, email, plot_ownership, plot_location, estimated_budget, desired_loan, monthly_income, employment_type, preferred_banks, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW())"
+        : "INSERT INTO loan_enquiries (reference_number, applicant_name, phone, email, plot_ownership, plot_location, estimated_budget, desired_loan, monthly_income, employment_type, preferred_banks, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))";
 
     $stmt = $db->prepare($sql);
     $stmt->execute([
-        $userId, $name, $phone, $email, $ownership, $location, $estBudget, $desiredLoan, $income, $empType, $banks
+        $refNumber, $name, $phone, $email, $ownership, $location, $estBudget, $desiredLoan, $income, $empType, $banks
     ]);
-
-    // Also register lead into CRM
-    $enqNum = 'ZIP-LN-' . date('Y') . '-' . rand(100, 999);
-    $leadSql = Database::getDriver() === 'mysql'
-        ? "INSERT INTO leads (enquiry_number, full_name, email, phone, service_requested, project_location, estimated_budget, source, status, notes, created_at) VALUES (?, ?, ?, ?, 'Self-Construction Loan Assistance', ?, ?, 'website', 'new', ?, NOW())"
-        : "INSERT INTO leads (enquiry_number, full_name, email, phone, service_requested, project_location, estimated_budget, source, status, notes, created_at) VALUES (?, ?, ?, ?, 'Self-Construction Loan Assistance', ?, ?, 'website', 'new', ?, datetime('now'))";
-    
-    $leadStmt = $db->prepare($leadSql);
-    $leadStmt->execute([
-        $enqNum, $name, $email, $phone, $location, "₹" . ($desiredLoan/100000) . " Lakhs Loan", "Plot: {$ownership}, Monthly Inc: ₹{$income}, Banks: {$banks}"
-    ]);
-
-    // Notify Admin
-    $adminUser = $db->query("SELECT id FROM users WHERE role = 'admin' LIMIT 1")->fetch();
-    if ($adminUser) {
-        Security::createNotification(
-            (int)$adminUser['id'],
-            "New Self-Construction Loan File",
-            "{$name} applied for ₹" . number_format($desiredLoan) . " loan assistance for {$location}.",
-            "leads.php"
-        );
-    }
-
-    Security::logAudit("LOAN_APPLICATION_SUBMITTED", "Loan assistance requested by {$name} for ₹{$desiredLoan}");
 
     echo json_encode([
         'success' => true,
-        'message' => "Loan assistance file registered successfully! Our Banking & Estimation Liaison Officer will contact you within 24 hours to coordinate your certified estimate."
+        'reference_number' => $refNumber,
+        'message' => "Loan assistance enquiry [{$refNumber}] recorded successfully! Our Banking & Estimation Liaison Officer will contact you within 24 hours to coordinate your certified estimate."
     ]);
 } catch (Exception $e) {
     error_log("Loan application error: " . $e->getMessage());

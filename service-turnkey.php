@@ -56,8 +56,8 @@ require_once __DIR__ . '/includes/header.php';
         <div class="mb-4 d-flex align-items-start">
           <div class="brand-logo-icon me-3 flex-shrink-0" style="width:48px; height:48px; font-size:1.2rem;">3</div>
           <div>
-            <h5 class="fw-bold text-navy mb-1">Live 14-Stage Customer Portal</h5>
-            <p class="text-muted small mb-0">Track daily site progress, review slump tests, inspect weekly site photographs, and approve milestone disbursements securely from your smartphone or laptop.</p>
+            <h5 class="fw-bold text-navy mb-1">Transparent 14-Stage Milestone Governance</h5>
+            <p class="text-muted small mb-0">Receive weekly documented progress reports, certified slump and cube test certificates, high-resolution site photographs, and transparent stage-wise milestone sign-offs before any payment release.</p>
           </div>
         </div>
 

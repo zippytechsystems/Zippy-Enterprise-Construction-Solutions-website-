@@ -100,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && Security::verifyCsrf()) {
               <h5 class="fw-bold text-navy mb-0">Site Supervisor / Quality Inspector</h5>
               <span class="badge bg-warning text-dark fw-bold">Full Time &bull; Site-Based</span>
             </div>
-            <p class="text-muted small mb-3">Daily site supervision, daily labour management, rebar placement verification before slab casting, and daily photo documentation on the Zippy mobile portal.</p>
+            <p class="text-muted small mb-3">Daily site supervision, daily labour management, rebar placement verification before slab casting, and daily milestone photo documentation for quality reporting.</p>
             <div class="d-flex gap-3 small text-muted">
               <span><i class="fas fa-briefcase text-warning me-1"></i> 3-5 Years Experience</span>
               <span><i class="fas fa-graduation-cap text-warning me-1"></i> Diploma / B.Tech Civil</span>
