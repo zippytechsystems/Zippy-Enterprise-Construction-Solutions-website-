@@ -13,7 +13,7 @@
 
 ## 🏛️ Corporate Overview
 
-Zippy Enterprises Private Limited is a premier construction solutions and building development company based in Jubilee Hills, Hyderabad. This corporate portfolio website is engineered to attract serious residential, commercial, and apartment construction clients with complete transparency, uncompromising quality benchmarks, and high-converting lead generation workflows.
+Zippy Enterprises Private Limited is a premier construction solutions and building development company based in Nacharam, Hyderabad. This is a **100% Pure PHP & HTML/CSS/JavaScript Website** engineered to run directly on standard web hosting (Hostinger, cPanel, Apache, Nginx) with **zero build tools, zero Node.js dependencies, and zero compilation steps**.
 
 ### Brand Identity & Design System
 - **Deep Corporate Navy:** `#0A192F`
@@ -62,7 +62,7 @@ All enquiry forms on the website capture the 10 critical parameters required for
 9. Approximate Budget
 10. Specific Project Requirements / Notes
 
-Every submission generates an automatic reference ID (e.g. `ZIP-ENQ-2026-XXXX`), saves to the database, dispatches an email alert to `sales@zippyenterpriseconstructions.in`, and provides an instant one-click WhatsApp pre-filled connection for immediate engagement.
+Every submission generates an automatic reference ID (e.g. `ZIP-ENQ-2026-XXXX`), saves to the database, dispatches an email alert to `zippyconstructions@gmail.com`, and provides an instant one-click WhatsApp pre-filled connection for immediate engagement.
 
 ---
 

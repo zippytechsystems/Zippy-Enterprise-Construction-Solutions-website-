@@ -8,6 +8,7 @@
 
 - **Production Domain:** `https://zippyenterpriseconstructions.in` (and `https://www.zippyenterpriseconstructions.in`)
 - **Hosting Provider:** Hostinger (Web Hosting, Cloud Hosting, or Business Web Hosting)
+- **Architecture:** 100% Pure PHP & HTML/CSS/JS (Zero Node.js, zero npm, zero build tools — directly upload to `public_html`)
 - **Control Panel:** Hostinger **hPanel**
 - **Web Server:** Apache 2.4+ with PHP 8.2+
 - **Database:** Hostinger MySQL 8.0+
