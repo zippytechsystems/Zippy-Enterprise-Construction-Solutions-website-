@@ -41,11 +41,10 @@ Zippy Enterprises Private Limited is a premier construction solutions and buildi
 12. **Our Projects (`projects.php`):** Filterable portfolio (All, Residential, Independent Houses, Luxury Villas, Commercial, Apartments, Ongoing, Completed) with detailed specifications.
 13. **Project Gallery (`gallery.php`):** Visual showcase of architectural elevations, structural framing milestones, and finished luxury interiors.
 14. **Our Professional Network (`network.php`):** Verified ecosystem of builders, civil engineers, chartered architects, structural consultants, material suppliers, and interior designers.
-15. **Cost Estimator (`cost-estimator.php`):** Real-time interactive calculation engine with plot area, built-up area, floors, quality tiers, optional luxury add-ons, component distribution, and printable proposal PDF.
-16. **Contact Us (`contact.php`):** Corporate headquarters in Jubilee Hills, direct telephone lines, official email desks, interactive Google Maps, and direct message form.
-17. **Request a Quotation (`quote.php`):** Dedicated page featuring the complete 10-Field Enquiry System and a 6-step consultation briefing roadmap.
-18. **Privacy Policy (`privacy-policy.php`):** Corporate data confidentiality and GDPR/IT Act compliance.
-19. **Terms & Conditions (`terms.php`):** Legal scope of estimations, milestone governance, and Telangana jurisdiction.
+15. **Request a Quotation (`quote.php`):** Dedicated page featuring the complete 10-Field Enquiry System and a 6-step consultation briefing roadmap.
+16. **Contact Us (`contact.php`):** Corporate headquarters in Nacharam, direct telephone lines, official email desks, interactive Google Maps, and direct message form.
+17. **Privacy Policy (`privacy-policy.php`):** Corporate data confidentiality and GDPR/IT Act compliance.
+18. **Terms & Conditions (`terms.php`):** Legal scope of estimations, milestone governance, and Telangana jurisdiction.
 
 ---
 
@@ -120,7 +119,6 @@ Open `http://127.0.0.1:8000` in your web browser.
 ├── projects.php        # Filterable project portfolio showcase
 ├── gallery.php         # Visual photo gallery
 ├── network.php         # Professional network partners directory
-├── cost-estimator.php  # Interactive construction cost calculator
 ├── quote.php           # Dedicated 10-field quotation request page
 ├── contact.php         # Corporate contact desk & location details
 └── sitemap.xml         # Complete XML sitemap for SEO indexing
@@ -133,10 +131,9 @@ Open `http://127.0.0.1:8000` in your web browser.
 - **Company:** Zippy Enterprises Private Limited
 - **CIN:** U45200TG2020PTC145892
 - **GSTIN:** 36AAACZ1234F1Z8
-- **Headquarters:** Level 4, Zippy Tech Tower, Road No. 36, Jubilee Hills, Hyderabad, Telangana 500033
-- **Primary Line:** +91 91212 87654
-- **Board Line:** +91 40 4892 7800
-- **WhatsApp:** +91 91212 87654
-- **Official Email:** info@zippyenterpriseconstructions.in
-- **Sales & Tenders:** sales@zippyenterpriseconstructions.in
+- **Headquarters:** Sneha Apartment, HMT Nagar, Nacharam, Hyderabad, Telangana 500076, India
+- **Primary Mobile:** +91 95424 39498
+- **WhatsApp:** +91 63026 90251
+- **Official Email:** zippyconstructions@gmail.com
+- **Sales & Enquiries:** zippyconstructions@gmail.com
 - **Official Domain:** https://zippyenterpriseconstructions.in

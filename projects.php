@@ -149,9 +149,9 @@ try {
       Schedule a complimentary site inspection and technical consultation with our Principal Civil Engineers in Hyderabad.
     </p>
     <div class="d-flex justify-content-center gap-3">
-      <a href="cost-estimator.php" class="btn btn-gold btn-lg">
-        <i class="fas fa-calculator me-2"></i> Cost Estimator
-      </a>
+      <button type="button" class="btn btn-gold btn-lg" data-bs-toggle="modal" data-bs-target="#quickEnquiryModal">
+        <i class="fas fa-calendar-check me-2"></i> Book Site Inspection
+      </button>
       <a href="quote.php" class="btn btn-outline-light btn-lg">
         <i class="fas fa-file-invoice me-2"></i> Request Detailed Quote
       </a>

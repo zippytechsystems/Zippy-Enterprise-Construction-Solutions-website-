@@ -83,5 +83,5 @@ try {
 
 } catch (Exception $e) {
     error_log("Enquiry submission error: " . $e->getMessage());
-    echo json_encode(['success' => false, 'message' => 'Database error occurred. Please call +91 91212 87654 directly.']);
+    echo json_encode(['success' => false, 'message' => 'Database error occurred. Please call ' . COMPANY_PHONE . ' directly.']);
 }

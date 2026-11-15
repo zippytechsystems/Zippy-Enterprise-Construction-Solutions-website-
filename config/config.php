@@ -21,12 +21,12 @@ define('COMPANY_NAME', 'Zippy Enterprises Private Limited');
 define('COMPANY_DOMAIN', 'zippyenterpriseconstructions.in');
 define('COMPANY_CIN', 'U45200TG2020PTC145892');
 define('COMPANY_GSTIN', '36AABCZ1234F1Z8');
-define('COMPANY_PHONE', '+91 91212 87654');
-define('COMPANY_PHONE_ALT', '+91 40 4567 8900');
-define('COMPANY_EMAIL', 'info@zippyenterpriseconstructions.in');
-define('COMPANY_SALES_EMAIL', 'sales@zippyenterpriseconstructions.in');
-define('COMPANY_WHATSAPP', '919121287654');
-define('COMPANY_ADDRESS', 'Level 4, Zippy Tech Tower, Road No. 36, Jubilee Hills, Hyderabad, Telangana 500033, India');
+define('COMPANY_PHONE', '+91 95424 39498');
+define('COMPANY_PHONE_ALT', '+91 95424 39498');
+define('COMPANY_EMAIL', 'zippyconstructions@gmail.com');
+define('COMPANY_SALES_EMAIL', 'zippyconstructions@gmail.com');
+define('COMPANY_WHATSAPP', '916302690251');
+define('COMPANY_ADDRESS', 'Sneha Apartment, HMT Nagar, Nacharam, Hyderabad, Telangana 500076, India');
 
 /**
  * Hostinger MySQL Database Configuration

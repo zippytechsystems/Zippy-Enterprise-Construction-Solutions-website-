@@ -122,7 +122,6 @@ Visit:
 - **Villa Construction:** `https://zippyenterpriseconstructions.in/service-villa.php`
 - **Independent Homes:** `https://zippyenterpriseconstructions.in/service-independent-house.php`
 - **Projects Showcase:** `https://zippyenterpriseconstructions.in/projects.php`
-- **Cost Estimator:** `https://zippyenterpriseconstructions.in/cost-estimator.php`
 - **Quotation Form:** `https://zippyenterpriseconstructions.in/quote.php`
 - **Contact:** `https://zippyenterpriseconstructions.in/contact.php`
 

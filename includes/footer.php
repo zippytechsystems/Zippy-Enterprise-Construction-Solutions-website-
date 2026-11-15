@@ -68,7 +68,6 @@
           <li><a href="projects.php"><i class="fas fa-chevron-right text-warning small"></i> Project Showcase</a></li>
           <li><a href="gallery.php"><i class="fas fa-chevron-right text-warning small"></i> Project Gallery</a></li>
           <li><a href="network.php"><i class="fas fa-chevron-right text-warning small"></i> Professional Network</a></li>
-          <li><a href="cost-estimator.php"><i class="fas fa-chevron-right text-warning small"></i> Cost Calculator</a></li>
           <li><a href="quote.php"><i class="fas fa-chevron-right text-warning small"></i> Request a Quote</a></li>
           <li><a href="careers.php"><i class="fas fa-chevron-right text-warning small"></i> Careers at Zippy</a></li>
           <li><a href="contact.php"><i class="fas fa-chevron-right text-warning small"></i> Contact Us</a></li>
@@ -80,7 +79,7 @@
         <h5 class="footer-title">Hyderabad HQ</h5>
         <p class="text-white-50 small mb-2">
           <i class="fas fa-map-marked-alt text-warning me-2"></i>
-          Level 4, Zippy Tech Tower, Road No. 36, Jubilee Hills, Hyderabad, Telangana 500033
+          Sneha Apartment, HMT Nagar, Nacharam, Hyderabad, Telangana 500076
         </p>
         <p class="text-white-50 small mb-2">
           <i class="fas fa-phone-alt text-warning me-2"></i>

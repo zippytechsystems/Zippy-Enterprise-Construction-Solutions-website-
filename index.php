@@ -45,9 +45,6 @@ try {
           <a href="services.php" class="btn btn-outline-gold btn-lg">
             <i class="fas fa-th-large me-2"></i> Explore Our Services
           </a>
-          <a href="cost-estimator.php" class="btn btn-navy btn-lg border border-secondary text-white">
-            <i class="fas fa-calculator me-2 text-warning"></i> Cost Calculator
-          </a>
         </div>
       </div>
       <div class="col-lg-4 d-none d-lg-block">
@@ -84,7 +81,7 @@ try {
         <span class="section-subtitle">About Zippy Enterprises</span>
         <h2 class="section-title">Built On Structural Integrity, Transparency &amp; Craftsmanship</h2>
         <p class="section-desc">
-          Zippy Enterprises Private Limited is an established corporate construction and building development company based in Jubilee Hills, Hyderabad. We specialize in bringing professional engineering discipline, rigorous quality testing, and transparent financial governance to private residential and commercial developments.
+          Zippy Enterprises Private Limited is an established corporate construction and building development company based in Nacharam, Hyderabad. We specialize in bringing professional engineering discipline, rigorous quality testing, and transparent financial governance to private residential and commercial developments.
         </p>
         <p class="text-muted">
           Our integrated approach unites licensed architects, chartered structural engineers (STAAD-Pro &amp; ETABS certified), seasoned on-ground civil contractors, and premium material suppliers. Whether you are building an independent family villa or developing a commercial tech hub, Zippy ensures your project is executed safely, on schedule, and to exact specifications.
@@ -374,7 +371,7 @@ try {
         <div class="p-4 rounded-4 border h-100 position-relative shadow-sm" style="background:#F8FAFC;">
           <div class="brand-logo-icon mb-3" style="width:44px; height:44px; font-size:1.1rem;">1</div>
           <h5 class="fw-bold text-navy mb-2">Step 1: Customer Consultation</h5>
-          <p class="small text-muted mb-0">Initial consultation at our Jubilee Hills office or via telephone to discuss your vision, space requirements, and budget expectations.</p>
+          <p class="small text-muted mb-0">Initial consultation at our Nacharam office or via telephone to discuss your vision, space requirements, and budget expectations.</p>
         </div>
       </div>
 
@@ -623,7 +620,7 @@ try {
         <span class="section-subtitle">Start Your Project</span>
         <h2 class="section-title">Schedule a Technical Consultation</h2>
         <p class="section-desc">
-          Meet with our Senior Project Consultant at our Jubilee Hills corporate office or request a complimentary on-site plot inspection anywhere across Hyderabad.
+          Meet with our Senior Project Consultant at our Nacharam corporate office or request a complimentary on-site plot inspection anywhere across Hyderabad.
         </p>
 
         <div class="mt-4">

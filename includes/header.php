@@ -51,7 +51,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center">
-        <span><i class="fas fa-map-marker-alt text-warning me-2"></i>Road No. 36, Jubilee Hills, Hyderabad</span>
+        <span><i class="fas fa-map-marker-alt text-warning me-2"></i>HMT Nagar, Nacharam, Hyderabad 500076</span>
         <span class="divider"></span>
         <a href="tel:<?= str_replace(' ', '', COMPANY_PHONE) ?>"><i class="fas fa-phone-alt text-warning me-2"></i><?= COMPANY_PHONE ?></a>
         <span class="divider"></span>
@@ -127,11 +127,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         <li class="nav-item">
           <a class="nav-link nav-link-custom <?= $currentPage === 'network' ? 'active' : '' ?>" href="network.php">Professional Network</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link-custom <?= $currentPage === 'cost-estimator' ? 'active' : '' ?>" href="cost-estimator.php">
-            <span class="badge bg-warning text-dark me-1">Calculator</span> Cost Estimator
-          </a>
-        </li>
+
         <li class="nav-item">
           <a class="nav-link nav-link-custom <?= $currentPage === 'contact' ? 'active' : '' ?>" href="contact.php">Contact</a>
         </li>

@@ -4,7 +4,7 @@
  * Zippy Enterprises Private Limited
  */
 $pageTitle = "Contact Us | Corporate Headquarters Hyderabad";
-$pageDescription = "Contact Zippy Enterprises Private Limited in Jubilee Hills, Hyderabad. Book an architectural consultation, schedule a site inspection, or call our construction desk directly.";
+$pageDescription = "Contact Zippy Enterprises Private Limited at Sneha Apartment, HMT Nagar, Nacharam, Hyderabad. Book an architectural consultation, schedule a site inspection, or call our construction desk directly.";
 require_once __DIR__ . '/includes/header.php';
 ?>
 
@@ -31,7 +31,7 @@ require_once __DIR__ . '/includes/header.php';
         <span class="section-subtitle">Get In Touch</span>
         <h2 class="section-title">We Are Here To Assist Your Construction Journey</h2>
         <p class="section-desc">
-          Visit our Jubilee Hills headquarters to review physical material samples (marble, timber, CP fittings), inspect architectural 3D models, or meet with our Principal Engineers.
+          Visit our Nacharam headquarters to review physical material samples (marble, timber, CP fittings), inspect architectural 3D models, or meet with our Principal Engineers.
         </p>
 
         <div class="mt-4">
@@ -46,10 +46,9 @@ require_once __DIR__ . '/includes/header.php';
           <div class="d-flex mb-4">
             <div class="brand-logo-icon me-3 flex-shrink-0" style="width:44px; height:44px; font-size:1.1rem;"><i class="fas fa-phone-alt"></i></div>
             <div>
-              <h6 class="fw-bold text-navy mb-1">Direct Telephone Lines</h6>
+              <h6 class="fw-bold text-navy mb-1">Direct Telephone Line</h6>
               <p class="text-muted small mb-0">
-                Primary: <a href="tel:<?= str_replace(' ', '', COMPANY_PHONE) ?>" class="text-navy fw-bold"><?= COMPANY_PHONE ?></a><br>
-                Board: <a href="tel:<?= str_replace(' ', '', COMPANY_PHONE_ALT) ?>" class="text-navy"><?= COMPANY_PHONE_ALT ?></a>
+                <a href="tel:<?= str_replace(' ', '', COMPANY_PHONE) ?>" class="text-navy fw-bold"><?= COMPANY_PHONE ?></a>
               </p>
             </div>
           </div>
@@ -71,7 +70,7 @@ require_once __DIR__ . '/includes/header.php';
               <h6 class="fw-bold text-navy mb-1">Instant WhatsApp Support</h6>
               <p class="text-muted small mb-0">
                 <a href="https://wa.me/<?= COMPANY_WHATSAPP ?>" target="_blank" class="text-success fw-bold">
-                  Click to Chat Directly (+91 <?= COMPANY_WHATSAPP ?>)
+                  Click to Chat Directly (+91 63026 90251)
                 </a>
               </p>
             </div>

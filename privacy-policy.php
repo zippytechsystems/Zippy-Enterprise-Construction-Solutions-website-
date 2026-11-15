@@ -24,7 +24,7 @@ require_once __DIR__ . '/includes/header.php';
   <div class="container py-4" style="max-width:900px;">
     <h3 class="fw-bold text-navy mb-3">1. Information Collection and Usage</h3>
     <p class="text-muted">
-      Zippy Enterprises Private Limited ("Company", "we", "us") collects personal and project data including full name, contact telephone, email address, plot dimensions, geographic site locations, and banking requirements when you submit enquiry forms, interact with the Construction Cost Estimator, request quotations, or apply for self-construction loan assistance.
+      Zippy Enterprises Private Limited ("Company", "we", "us") collects personal and project data including full name, contact telephone, email address, plot dimensions, geographic site locations, and banking requirements when you submit enquiry forms, request quotations, or apply for self-construction loan assistance.
     </p>
 
     <h3 class="fw-bold text-navy mt-4 mb-3">2. Project and Construction Data Confidentiality</h3>

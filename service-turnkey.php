@@ -78,9 +78,9 @@ require_once __DIR__ . '/includes/header.php';
         </div>
 
         <div class="mt-4 p-4 rounded-3 border" style="background:#F8FAFC;">
-          <h5 class="fw-bold text-navy mb-2"><i class="fas fa-calculator text-warning me-2"></i> Want an Instant Turnkey Estimate?</h5>
-          <p class="text-muted small mb-3">Our interactive estimation engine calculates turnkey costs based on built-up area and quality tiers in seconds.</p>
-          <a href="cost-estimator.php" class="btn btn-navy">Open Cost Estimator <i class="fas fa-arrow-right ms-2"></i></a>
+          <h5 class="fw-bold text-navy mb-2"><i class="fas fa-file-invoice text-warning me-2"></i> Want a Turnkey Project Quotation?</h5>
+          <p class="text-muted small mb-3">Submit your plot location, dimensions, and building requirements to receive an itemized Bill of Quantities (BOQ).</p>
+          <a href="quote.php" class="btn btn-navy">Request a Quotation <i class="fas fa-arrow-right ms-2"></i></a>
         </div>
       </div>
 

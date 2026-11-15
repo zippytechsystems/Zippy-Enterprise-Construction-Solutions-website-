@@ -30,7 +30,7 @@ require_once __DIR__ . '/includes/header.php';
         <span class="section-subtitle">Who We Are</span>
         <h2 class="section-title">Zippy Enterprises Private Limited</h2>
         <p class="section-desc">
-          Headquartered in Jubilee Hills, Hyderabad, Zippy Enterprises Private Limited was incorporated with a decisive charter: to elevate construction solutions and building development to the rigorous standards of enterprise technology.
+          Headquartered in Nacharam, Hyderabad, Zippy Enterprises Private Limited was incorporated with a decisive charter: to elevate construction solutions and building development to the rigorous standards of enterprise technology.
         </p>
         <p class="text-muted">
           We combine cutting-edge structural engineering software (STAAD-Pro, ETABS, Revit BIM) with seasoned on-ground site execution teams. Whether executing ultra-luxury private villas or multi-storey commercial complexes, our proprietary 14-stage governance model guarantees complete financial transparency, zero material compromise, and strict adherence to handover schedules.
@@ -164,14 +164,14 @@ require_once __DIR__ . '/includes/header.php';
   <div class="container py-4">
     <h2 class="text-white fw-bold mb-3">Ready to Build Your Architectural Landmark?</h2>
     <p class="text-white-50 mx-auto mb-4" style="max-width:600px;">
-      Schedule a private consultation at our Jubilee Hills corporate office or request a site inspection with our Senior Project Consultant.
+      Schedule a private consultation at our Nacharam corporate office or request a site inspection with our Senior Project Consultant.
     </p>
     <div class="d-flex justify-content-center gap-3">
       <button type="button" class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#quickEnquiryModal">
         <i class="fas fa-calendar-alt me-2"></i> Schedule Consultation
       </button>
-      <a href="cost-estimator.php" class="btn btn-outline-gold">
-        <i class="fas fa-calculator me-2"></i> Calculate Cost
+      <a href="quote.php" class="btn btn-outline-gold">
+        <i class="fas fa-file-invoice me-2"></i> Request a Quote
       </a>
     </div>
   </div>
