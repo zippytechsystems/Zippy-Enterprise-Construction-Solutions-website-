@@ -13,7 +13,7 @@
 
 ## 🏛️ Corporate Overview
 
-Zippy Enterprises Private Limited is a premier construction solutions and building development company based in Nacharam, Hyderabad. This platform features a **React.js Component Framework** bundled for high-speed client rendering within a **Pure PHP/MySQL Server Package**, engineered to run natively on Hostinger, cPanel, Apache, and Nginx with **zero Node.js runtime required on the production server**.
+Zippy Enterprises Private Limited is a premier construction solutions and building development company based in Nacharam, Hyderabad. This is a **100% Pure PHP & HTML/CSS/JavaScript Website** engineered to run natively on Hostinger, cPanel, Apache, and Nginx with **zero build tools, zero Node.js dependencies, and zero compilation steps**.
 
 ### Brand Identity & Design System
 - **Deep Corporate Navy:** `#0A192F`
