@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A192F"/>
+      <stop offset="100%" stop-color="#0E2442"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D77F"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(212,175,55,0.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  
+  <!-- Architectural Silhouette & Lines -->
+  <g opacity="0.3" stroke="#D4AF37" stroke-width="1.5" fill="none">
+    <rect x="80" y="160" width="180" height="340"/>
+    <line x1="80" y1="200" x2="260" y2="200"/>
+    <line x1="80" y1="260" x2="260" y2="260"/>
+    <line x1="80" y1="320" x2="260" y2="320"/>
+    <line x1="80" y1="380" x2="260" y2="380"/>
+    
+    <polygon points="280,100 520,100 520,500 280,500"/>
+    <line x1="280" y1="180" x2="520" y2="180"/>
+    <line x1="280" y1="260" x2="520" y2="260"/>
+    <line x1="280" y1="340" x2="520" y2="340"/>
+    <line x1="280" y1="420" x2="520" y2="420"/>
+
+    <polygon points="540,220 720,220 720,500 540,500"/>
+  </g>
+
+  <!-- Golden Accents & Label -->
+  <rect x="70" y="60" width="6" height="55" fill="url(#gold)"/>
+  <text x="90" y="85" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF" letter-spacing="1">ARCHITECTURAL & STRUCTURAL</text>
+  <text x="90" y="108" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#D4AF37" letter-spacing="2">PMC & STATUTORY CLEARANCE</text>
+
+  <!-- Monogram Watermark -->
+  <text x="730" y="460" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="14" font-weight="800" fill="rgba(255,255,255,0.2)" text-anchor="end">ZIPPY ENTERPRISES</text>
+</svg>
